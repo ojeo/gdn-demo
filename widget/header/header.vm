@@ -1,0 +1,25 @@
+#if($menus)
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <a class="navbar-brand active" href="$!{request.contextPath}">hello</a>
+            #initMenu($menus)
+        </div>
+    </div>
+#end
+#macro(initMenu $menus $child)
+    #if($child)
+        <ul class="dropdown-menu" role="menu">
+    #else
+        <ul class="nav navbar-nav" role="menu">
+    #end
+    #foreach($menu in $menus)
+        #if($menu.childs)
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">$!{menu.title}<span class="caret"></span></a>
+            #initMenu ($menu.childs true)
+            </li>
+        #else
+            <li><a href="$!{menu.href}">$!{menu.title}</a></li>
+        #end
+    #end
+    </ul>
+#end

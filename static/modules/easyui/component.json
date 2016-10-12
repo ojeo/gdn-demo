@@ -1,0 +1,9 @@
+{
+    "version": "1.5.0",
+    "repos": "https://github.com/ojeo/easyui.git",
+    "main": "jquery.easyui.min.js",
+    "dependencies": {
+        "jquery": ">=1.9.1"
+    },
+    "name": "easyui"
+}

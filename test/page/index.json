@@ -1,0 +1,27 @@
+{
+    "title":"hello",
+    "menus":[
+        {
+            "title":"首页",
+            "href":"/",
+        },{
+            "title":"百度",
+            "href":"http://www.baidu.com", 
+            "childs":[
+                {
+                    "title":"首页",
+                    "href":"http://www.baidu.com",
+                },
+                {
+                    "title":"地图",
+                    "href":"http://ditu.baidu.com",
+                },
+                {
+                    "title":"翻译",
+                    "href":"http://ditu.baidu.com",
+                },
+
+            ]
+        }
+    ],
+}

@@ -1,0 +1,13 @@
+.DS_Store
+
+/.idea
+
+/components
+
+/node_modules
+
+/output
+
+/out
+
+/prod
